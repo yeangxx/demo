@@ -34,5 +34,11 @@ public class DemoApplication {
 		return "hellooooooooooo";
 	}
 
+	@RequestMapping("hello3")
+	@ResponseBody
+	public String sayHello3(){
+		return "hellooooooooooo";
+	}
+
 }
 
