@@ -40,5 +40,11 @@ public class DemoApplication {
 		return "hellooooooooooo";
 	}
 
+	@RequestMapping("hello4")
+	@ResponseBody
+	public String sayHello4(){
+		return "hellooooooooooo";
+	}
+
 }
 
