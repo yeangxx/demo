@@ -19,8 +19,31 @@ public class DemoApplication {
 	public String sayHello(){
 		return "hellooooooooooo";
 	}
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+	}*/
+
+	@RequestMapping("hello")
+	public static void main(String[] args) {
+		System.out.println("hello");
+	}
+
+	@RequestMapping("hello2")
+	@ResponseBody
+	public String sayHello2(){
+		return "hellooooooooooo";
+	}
+
+	@RequestMapping("hello3")
+	@ResponseBody
+	public String sayHello3(){
+		return "hellooooooooooo";
+	}
+
+	@RequestMapping("hello4")
+	@ResponseBody
+	public String sayHello4(){
+		return "hellooooooooooo";
 	}
 
 }
